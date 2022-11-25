@@ -1,0 +1,17 @@
+.contentJenisKamar {
+  padding-top: 120px;
+  text-align: center;
+  padding-bottom: 300px;
+}
+
+.contentJenisKamarImg {
+  width: 512px;
+}
+
+@media screen and (min-width: 768px) {
+  .contentJenisKamar {
+    padding-top: 10px;
+    width: 40%;
+    margin: auto;
+  }
+}
