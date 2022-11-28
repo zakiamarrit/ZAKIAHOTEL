@@ -17,6 +17,7 @@ export default function Start() {
   const handleLogin = async () => {
     try {
       const response = await axios.get('https://api-zakiahotel.herokuapp.com/users', {
+        //ngambil, filter
         params: {
           username: username,
           password: password,
@@ -35,7 +36,7 @@ export default function Start() {
   return (
     <Layout>
       <div className="contentStart">
-        <img src="/images/zakiatel.png" className="contentStartImg" alt="rocket"></img>
+        <img src="/images/zakia hotel.png" className="contentStartImg" alt="rocket"></img>
         <Input label="Username" placeholder="Masukkan username kamu" onChange={handleChangeUsername} />
         <Gap height={15} />
         <Input label="Password" placeholder="Password jangan lupa yaa" onChange={handleChangePassword} />

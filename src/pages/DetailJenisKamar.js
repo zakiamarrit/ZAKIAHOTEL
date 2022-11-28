@@ -35,12 +35,12 @@ export default function DetailJenisKamar() {
   return (
     <Layout>
       <div className="contentDetailJenisKamar">
-        <img src="/images/zakiatel.png" className="contentDetailJenisKamarImg" alt="rocket"></img>
+        <img src="/images/zakia hotel.png" className="contentDetailJenisKamarImg" alt="rocket"></img>
         {isLoading ? (
           <p>Harap Tunggu..</p>
         ) : (
           <>
-            <h1>Detail Jadwal Kamar</h1>
+            <h1>Detail Jenis Kamar</h1>
             <div className="cardDetailJenisKamar">
               <table border="0" width="100%">
                 <tr>

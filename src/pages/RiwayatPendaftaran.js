@@ -36,7 +36,7 @@ export default function RiwayatPendaftaran() {
   return (
     <Layout>
       <div className="contentRiwayatPendaftaran">
-        <img src="/images/zakiatel.png" className="contentRiwayatPendaftaranImg" alt="rocket"></img>
+        <img src="/images/zakia hotel.png" className="contentRiwayatPendaftaranImg" alt="rocket"></img>
         {isLoading ? (
           <p>Harap Tunggu..</p>
         ) : (

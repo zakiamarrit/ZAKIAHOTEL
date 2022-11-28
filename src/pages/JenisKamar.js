@@ -31,7 +31,7 @@ export default function JenisKamar() {
   return (
     <Layout>
       <div className="contentJenisKamar">
-        <img src="/images/zakiatel.png" className="contentJenisKamarImg" alt="rocket"></img>
+        <img src="/images/zakia hotel.png" className="contentJenisKamarImg" alt="rocket"></img>
         {isLoading ? (
           <p>Harap Tunggu..</p>
         ) : (

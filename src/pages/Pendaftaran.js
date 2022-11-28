@@ -110,7 +110,7 @@ export default function Pendaftaran() {
   return (
     <Layout>
       <div className="contentPendaftaran">
-        <img src="/images/zakiatel.png" className="contentPendaftaranImg" alt="rocket"></img>
+        <img src="/images/zakia hotel.png" className="contentPendaftaranImg" alt="rocket"></img>
         {isLoading ? (
           <p>Harap Tunggu..</p>
         ) : (

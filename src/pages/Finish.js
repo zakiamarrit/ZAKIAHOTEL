@@ -36,14 +36,14 @@ export default function Finish() {
   return (
     <Layout>
       <div className="contentFinish">
-        <img src="/images/zakiatel.png" className="contentFinishImg" alt="rocket"></img>
+        <img src="/images/zakia hotel.png" className="contentFinishImg" alt="rocket"></img>
         {isLoading ? (
           <p>Harap Tunggu..</p>
         ) : (
           <>
             <BuktiCard data={data} />
             <Gap height={20} />
-            <p className="contentFinishBody">Simpan hasil bukti pendaftaran tersebut untuk melakukan check-in pada zakiatel sesuai dengan tanggal pesan yang sudah ditentukan</p>
+            <p className="contentFinishBody">Simpan hasil bukti pendaftaran tersebut untuk melakukan check-in pada zakia hotel sesuai dengan tanggal pesan yang sudah ditentukan</p>
             <LinkPrimary url="/" text="Halaman Utama" />
             <Gap height={30} />
           </>
