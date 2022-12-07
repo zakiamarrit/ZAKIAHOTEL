@@ -1,4 +1,4 @@
-.main{
+.main {
   padding: 5px 10px;
 }
 
@@ -26,6 +26,7 @@ footer {
   font-family: Verdana;
   padding: 5px 0;
   font-size: 12px;
+  overflow-y: auto;
 }
 
 .icon {
@@ -38,10 +39,8 @@ footer {
   color: #0094f3;
 }
 
-
-
-@media screen and (min-width:768px) {
-  .main{
+@media screen and (min-width: 768px) {
+  .main {
     padding: 5px 30px;
   }
 }

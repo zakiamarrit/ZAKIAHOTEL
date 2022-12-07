@@ -1,16 +1,22 @@
-.contentStart{
-    padding-top: 120px;
-    text-align: center;
+.contentStart {
+  padding-top: 120px;
+  text-align: center;
 }
 
-.contentStartImg{
-    width: 512px;
+.contentStartImg {
+  width: 512px;
 }
 
-@media screen and (min-width:768px) {
-    .contentStart{
-        padding-top: 10px;
-        width: 40%;
-        margin: auto;
-    }
+@media screen and (min-width: 768px) {
+  .contentStart {
+    padding-top: 10px;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 100px) {
+  .contentStartImg {
+    width: 300px;
+  }
 }

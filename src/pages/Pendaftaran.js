@@ -119,7 +119,7 @@ export default function Pendaftaran() {
             <Gap height={25} />
             <Select label="Jenis Kamar" option={dataJenisKamar} onChange={handleChangeJenisKamar} />
             <Gap height={15} />
-            <Input label="Tanggal Pesan" onChange={handleChangeTglPesan} />
+            <Input type="date" label="Tanggal Pesan" onChange={handleChangeTglPesan} />
             <Gap height={15} />
             <Select label="Jadwal Kamar" option={dataJadwalKamar} onChange={handleChangeJadwalKamar} />
             <Gap height={15} />

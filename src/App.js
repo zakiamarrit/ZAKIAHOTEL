@@ -1,17 +1,17 @@
 import React from 'react';
-import Welcome from './pages/Welcome'
+import Welcome from './pages/Welcome';
 import Start from './pages/Start';
 import Pendaftaran from './pages/Pendaftaran';
-import { HiHome } from 'react-icons/hi'
-import { MdGroup } from 'react-icons/md'
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+import { HiHome } from 'react-icons/hi';
+import { MdGroup } from 'react-icons/md';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import Finish from './pages/Finish';
 import RiwayatPendaftaran from './pages/RiwayatPendaftaran';
 import About from './pages/About';
 import JenisKamar from './pages/JenisKamar';
 import DetailJenisKamar from './pages/DetailJenisKamar';
-
+import TentangHotel from './pages/TentangHotel';
 
 function App() {
   return (
@@ -19,12 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/start" element={<Start />} />
-        <Route path="/pendaftaran/:id_user" element={<Pendaftaran/>}/>
+        <Route path="/pendaftaran/:id_user" element={<Pendaftaran />} />
         <Route path="/riwayat_pendaftaran/:id_user" element={<RiwayatPendaftaran />} />
         <Route path="/finish/:id" element={<Finish />} />
         <Route path="/about" element={<About />} />
         <Route path="/jenis_kamar" element={<JenisKamar />} />
         <Route path="/detail_jenis_kamar/:id" element={<DetailJenisKamar />} />
+        {/* <Route path="/tentang_hotel" element={<TentangHotel />} /> */}
       </Routes>
       <footer>
         <NavLink to="/" className="iconWrapper">

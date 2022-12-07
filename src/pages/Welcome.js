@@ -16,6 +16,9 @@ export default function Welcome() {
         <LinkPrimary url="start" text="Mulai" />
         <Gap height={10} />
         <LinkSecondary url="/jenis_kamar" text="Jenis Kamar" />
+        <Gap height={10} />
+        <LinkSecondary url="/tentang_hotel" text="Tentang Hotel" />
+        <Gap height={60} />
       </div>
     </Layout>
   );
