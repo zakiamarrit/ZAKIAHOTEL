@@ -45,6 +45,7 @@ export default function RiwayatPendaftaran() {
               <div key={index}>
                 <Gap height={15} />
                 <RiwayatCard riwayat={item} />
+                <Gap height={50} />
               </div>
             );
           })
