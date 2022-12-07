@@ -12,7 +12,7 @@ export default function DetailJenisKamar() {
   useEffect(() => {
     async function fetchDetailJenisKamar() {
       try {
-        const response = await axios.get('https://api-zakiahotel.herokuapp.com/jenisKamar', {
+        const response = await axios.get('http://localhost:8686/jenisKamar', {
           params: {
             id,
           },

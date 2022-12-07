@@ -14,7 +14,7 @@ export default function Finish() {
   useEffect(() => {
     async function fetchPendaftaran() {
       try {
-        const response = await axios.get('https://api-zakiahotel.herokuapp.com/pendaftaran', {
+        const response = await axios.get('http://localhost:8686/pendaftaran', {
           params: {
             id,
           },

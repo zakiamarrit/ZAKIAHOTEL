@@ -38,7 +38,7 @@ export default function Pendaftaran() {
     const id = nanoid();
     const nama_user = dataUser.nama_user;
     try {
-      const response = await axios.post('https://api-zakiahotel.herokuapp.com/pendaftaran', {
+      const response = await axios.post('http://localhost:8686/pendaftaran', {
         id,
         id_user,
         nama_user,
@@ -57,7 +57,7 @@ export default function Pendaftaran() {
 
   const fetchJadwalKamar = async (nama_jenis_kamar, id_hari) => {
     try {
-      const response = await axios.get('https://api-zakiahotel.herokuapp.com/jadwalKamar', {
+      const response = await axios.get('http://localhost:8686/jadwalKamar', {
         params: {
           nama_jenis_kamar,
           id_hari,
@@ -74,7 +74,7 @@ export default function Pendaftaran() {
   useEffect(() => {
     async function fetchUser() {
       try {
-        const response = await axios.get('https://api-zakiahotel.herokuapp.com/users', {
+        const response = await axios.get('http://localhost:8686/users', {
           params: {
             id_user,
           },
@@ -89,7 +89,7 @@ export default function Pendaftaran() {
 
     async function fetchJenisKamar() {
       try {
-        const response = await axios.get('https://api-zakiahotel.herokuapp.com/jenisKamar');
+        const response = await axios.get('http://localhost:8686/jenisKamar');
         if (response.status === 200) {
           setDataJenisKamar(response.data);
         }
