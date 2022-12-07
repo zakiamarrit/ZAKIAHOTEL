@@ -13,7 +13,7 @@ export default function RiwayatPendaftaran() {
   useEffect(() => {
     async function fetchRiwayatPendaftaran() {
       try {
-        const response = await axios.get('http://localhost:8686/pendaftaran', {
+        const response = await axios.get('https://apizakia.destinasicomputindo.com/pendaftaran', {
           params: {
             id_user,
           },

@@ -38,7 +38,7 @@ export default function Pendaftaran() {
     const id = nanoid();
     const nama_user = dataUser.nama_user;
     try {
-      const response = await axios.post('http://localhost:8686/pendaftaran', {
+      const response = await axios.post('https://apizakia.destinasicomputindo.com/pendaftaran', {
         id,
         id_user,
         nama_user,
@@ -57,7 +57,7 @@ export default function Pendaftaran() {
 
   const fetchJadwalKamar = async (nama_jenis_kamar, id_hari) => {
     try {
-      const response = await axios.get('http://localhost:8686/jadwalKamar', {
+      const response = await axios.get('https://apizakia.destinasicomputindo.com/jadwalKamar', {
         params: {
           nama_jenis_kamar,
           id_hari,
@@ -74,7 +74,7 @@ export default function Pendaftaran() {
   useEffect(() => {
     async function fetchUser() {
       try {
-        const response = await axios.get('http://localhost:8686/users', {
+        const response = await axios.get('https://apizakia.destinasicomputindo.com/users', {
           params: {
             id_user,
           },
@@ -89,7 +89,7 @@ export default function Pendaftaran() {
 
     async function fetchJenisKamar() {
       try {
-        const response = await axios.get('http://localhost:8686/jenisKamar');
+        const response = await axios.get('https://apizakia.destinasicomputindo.com/jenisKamar');
         if (response.status === 200) {
           setDataJenisKamar(response.data);
         }

@@ -12,7 +12,7 @@ export default function DetailJenisKamar() {
   useEffect(() => {
     async function fetchDetailJenisKamar() {
       try {
-        const response = await axios.get('http://localhost:8686/jenisKamar', {
+        const response = await axios.get('https://apizakia.destinasicomputindo.com/jenisKamar', {
           params: {
             id,
           },
@@ -37,7 +37,7 @@ export default function DetailJenisKamar() {
       <div className="contentDetailJenisKamar">
         <img src="/images/zakia hotel.png" className="contentDetailJenisKamarImg" alt="rocket"></img>
         {isLoading ? (
-          <p>Harap Tunggu..</p>
+          <p>Mohon menunggu..</p>
         ) : (
           <>
             <h1>Detail Jenis Kamar</h1>

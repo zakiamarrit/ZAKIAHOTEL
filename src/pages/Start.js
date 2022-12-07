@@ -16,7 +16,7 @@ export default function Start() {
   const handleChangePassword = (e) => setPassword(e.target.value);
   const handleLogin = async () => {
     try {
-      const response = await axios.get('http://localhost:8686/users', {
+      const response = await axios.get('https://apizakia.destinasicomputindo.com/users', {
         //ngambil, filter
         params: {
           username: username,

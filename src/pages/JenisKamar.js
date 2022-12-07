@@ -12,7 +12,7 @@ export default function JenisKamar() {
   useEffect(() => {
     async function fetchJenisKamar() {
       try {
-        const response = await axios.get('http://localhost:8686/jenisKamar');
+        const response = await axios.get('https://apizakia.destinasicomputindo.com/jenisKamar');
         if (response.status === 200) {
           setData(response.data);
         }
